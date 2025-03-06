@@ -1,0 +1,81 @@
+import streamlit as st
+import re
+import spacy
+from spacy import displacy
+
+##############################################################################
+# 1) A helper function to highlight spans using displaCy in manual mode
+##############################################################################
+def highlight_text_in_displacy(full_text, spans):
+    """
+    full_text: the entire original text (string)
+    spans: a list of (start, end, label) offsets in the full_text
+    Returns an HTML string with displaCy-rendered highlights.
+    """
+    # Build the data structure for displaCy manual mode
+    data = {
+        "text": full_text,
+        "ents": [
+            {"start": s, "end": e, "label": lbl}
+            for (s, e, lbl) in spans
+        ],
+        "title": None
+    }
+    # Render to HTML
+    html = displacy.render(data, style="ent", manual=True)
+    return html
+
+##############################################################################
+# 2) Load a spaCy model (raw / pre-trained)
+##############################################################################
+nlp = spacy.load("en_core_web_sm")  # Or another model
+
+##############################################################################
+# 3) Streamlit UI
+##############################################################################
+st.title("Regex → Chunk → spaCy NER → Highlight in Original Text")
+
+uploaded_file = st.file_uploader("Upload a .txt file", type=["txt"])
+
+if uploaded_file is not None:
+    # Read file contents as a string
+    text = uploaded_file.read().decode("utf-8", errors="replace")
+
+    st.subheader("Original Text")
+    st.write(text)
+
+    # 3.1) Regex Step
+    st.subheader("Regex Extraction")
+    pattern = st.text_input("Enter a regex pattern", 
+                            r'(?m)(?s)^Compensation.*?\$[0-9]+.*?(?=\n\n|$)')
+
+    if pattern:
+        match = re.search(pattern, text)
+        if match:
+            # The chunk is from match.start() to match.end() in the original text
+            chunk_text = match.group(0)
+            chunk_start = match.start()
+            chunk_end = match.end()
+
+            st.markdown("**Regex Matched Chunk**")
+            st.write(chunk_text)
+
+            # 3.2) spaCy NER on the chunk
+            doc = nlp(chunk_text)
+
+            # 3.3) Convert chunk entity offsets → original text offsets
+            highlighted_spans = []
+            for ent in doc.ents:
+                # ent.start_char, ent.end_char are relative to chunk_text
+                orig_start = chunk_start + ent.start_char
+                orig_end   = chunk_start + ent.end_char
+                highlighted_spans.append((orig_start, orig_end, ent.label_))
+
+            # 3.4) Render highlights in original text
+            html_with_highlights = highlight_text_in_displacy(text, highlighted_spans)
+
+            st.subheader("Highlighted in Original Text")
+            st.write(html_with_highlights, unsafe_allow_html=True)
+
+        else:
+            st.warning("No match found with the given pattern. Try a different regex.")
