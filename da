@@ -1,81 +1,71 @@
-import streamlit as st
-import re
-import spacy
-from spacy import displacy
+💼 Project Title: Customer Feedback Tagging and Complaint Classification for Banking Services
+📖 Scenario / Business Case:
+Banks receive vast amounts of unstructured feedback through customer surveys, support tickets, app reviews, complaint filings, and social media. Quickly classifying this feedback into actionable categories can help:
 
-##############################################################################
-# 1) A helper function to highlight spans using displaCy in manual mode
-##############################################################################
-def highlight_text_in_displacy(full_text, spans):
-    """
-    full_text: the entire original text (string)
-    spans: a list of (start, end, label) offsets in the full_text
-    Returns an HTML string with displaCy-rendered highlights.
-    """
-    # Build the data structure for displaCy manual mode
-    data = {
-        "text": full_text,
-        "ents": [
-            {"start": s, "end": e, "label": lbl}
-            for (s, e, lbl) in spans
-        ],
-        "title": None
-    }
-    # Render to HTML
-    html = displacy.render(data, style="ent", manual=True)
-    return html
+Detect product or service issues early (e.g., "ATM malfunction", "Mobile App Bug", "Loan Processing Delay")
 
-##############################################################################
-# 2) Load a spaCy model (raw / pre-trained)
-##############################################################################
-nlp = spacy.load("en_core_web_sm")  # Or another model
+Ensure compliance with regulatory reporting (e.g., identifying complaints under categories like "Discrimination", "High Fees", "Privacy Breach")
 
-##############################################################################
-# 3) Streamlit UI
-##############################################################################
-st.title("Regex → Chunk → spaCy NER → Highlight in Original Text")
+Prioritize resolution based on severity
 
-uploaded_file = st.file_uploader("Upload a .txt file", type=["txt"])
+⚙️ Solution Design:
+🗂 Data Sources:
+Customer service chat logs
 
-if uploaded_file is not None:
-    # Read file contents as a string
-    text = uploaded_file.read().decode("utf-8", errors="replace")
+Mobile app and website reviews
 
-    st.subheader("Original Text")
-    st.write(text)
+Complaint submissions (e.g., CFPB complaint database)
 
-    # 3.1) Regex Step
-    st.subheader("Regex Extraction")
-    pattern = st.text_input("Enter a regex pattern", 
-                            r'(?m)(?s)^Compensation.*?\$[0-9]+.*?(?=\n\n|$)')
+Social media mentions (optional)
 
-    if pattern:
-        match = re.search(pattern, text)
-        if match:
-            # The chunk is from match.start() to match.end() in the original text
-            chunk_text = match.group(0)
-            chunk_start = match.start()
-            chunk_end = match.end()
+📐 Processing Pipeline:
+Text Preprocessing:
 
-            st.markdown("**Regex Matched Chunk**")
-            st.write(chunk_text)
+Clean text (remove PII, standardize formats)
 
-            # 3.2) spaCy NER on the chunk
-            doc = nlp(chunk_text)
+Optional: Language detection and translation for multilingual feedback
 
-            # 3.3) Convert chunk entity offsets → original text offsets
-            highlighted_spans = []
-            for ent in doc.ents:
-                # ent.start_char, ent.end_char are relative to chunk_text
-                orig_start = chunk_start + ent.start_char
-                orig_end   = chunk_start + ent.end_char
-                highlighted_spans.append((orig_start, orig_end, ent.label_))
+Feature Extraction with Pretrained Embeddings:
 
-            # 3.4) Render highlights in original text
-            html_with_highlights = highlight_text_in_displacy(text, highlighted_spans)
+Use Sentence-BERT (SBERT) to transform each piece of feedback into a semantic vector
 
-            st.subheader("Highlighted in Original Text")
-            st.write(html_with_highlights, unsafe_allow_html=True)
+Store embeddings for efficient reuse
 
-        else:
-            st.warning("No match found with the given pattern. Try a different regex.")
+Supervised Classifier (No Heavy Training):
+
+Train a Logistic Regression or XGBoost classifier on labeled feedback data
+
+Example Categories:
+
+Product Issues: Mobile App, Credit Card, Loan, Online Banking
+
+Service Quality: Customer Support, Responsiveness, Agent Behavior
+
+Regulatory Risks: Privacy Concerns, Discrimination, Excessive Fees
+
+Evaluation Metrics:
+
+Use Precision, Recall, F1-Score for classification quality
+
+Optionally apply ROC-AUC if it’s a binary classification scenario (e.g., regulatory risk vs. not)
+
+Deployment:
+
+API endpoint using FastAPI or Flask to classify new feedback in real-time
+
+Optional: Build a Streamlit dashboard to visualize the volume and trends of different complaint categories over time
+
+📈 Deliverables:
+Python API that accepts feedback text and returns predicted tags
+
+Visualization Dashboard (Monthly trend of complaints, Top 5 complaint categories, Severity heatmaps)
+
+Classification Performance Report (Precision/Recall per class, Confusion Matrix)
+
+💡 Example Use Cases:
+Compliance Monitoring: Auto-flag potential regulatory risks in feedback for legal review
+
+Product Management: Identify recurring issues with loan products or app features
+
+Customer Service Optimization: Prioritize tickets related to high-impact categories like "Fraudulent Transactions"
+
