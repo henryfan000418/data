@@ -1,0 +1,392 @@
+<|box_start|>057 161 937 194<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Inequality and shocks to firms' pricing decisions<|md_end|>
+<|box_start|>059 208 625 224<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Filippo Ferroni, senior economist, and Alessandro T. Villa, economist<|md_end|>
+<|box_start|>087 248 336 268<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Introduction and summary<|md_end|>
+<|box_start|>084 282 914 494<|box_end|><|ref_start|>text<|ref_end|><|md_start|>After two decades of extremely stable inflation, prices have grown markedly in the past few years, as shown in figure 1. Part of this increase in prices can be traced to factors affecting firms' pricing decisions, which presumably depend on where firms think inflation is heading. See, for example, figure 2, which shows the interquartile range of responses from the Survey of Firms' Inflation Expectations (SoFIE)—the Cleveland Fed's survey of CEOs about their outlooks on inflation. The specific question that SoFIE asks is as follows: "What annual inflation rate do you think the U.S. Federal Reserve is trying to achieve on average?" These inflation expectations supposedly inform firms' price setting of their goods (and services). Figure 2 shows that before the Covid- 19 pandemic, the median response to this question was \(2\%\) and the distribution was skewed to the right. As illustrated by figure 1, inflation surged in 2021- 22. Simultaneously, as illustrated by figure 2, the median of the medium- term inflation expectations rose by 50- 100 basis points from pre- pandemic levels and the distribution of the SoFIE responses skewed further to the right (that is, toward the upside). From this perspective, it would seem that inflation expectations became temporarily<|md_end|>
+<|box_start|>101 539 484 812<|box_end|><|ref_start|>image<|ref_end|><|md_start|>![]('img_url')<|md_end|>
+<|box_start|>101 513 377 530<|box_end|><|ref_start|>image_caption<|ref_end|><|md_start|>1. CPI and PCE inflation, 2016-24<|md_end|>
+<|box_start|>115 821 483 872<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Notes: The CPI inflation data are from the U.S. Bureau of Labor Statistics, and the PCE inflation data are from the U.S. Bureau of Economic Analysis. Year- over- year percent changes in inflation are plotted.<|md_end|>
+<|box_start|>115 879 460 904<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Sources: U.S. Bureau of Labor Statistics and U.S. Bureau of Economic Analysis from Haver Analytics.<|md_end|>
+<|box_start|>512 513 902 546<|box_end|><|ref_start|>table_caption<|ref_end|><|md_start|>2. Federal Reserve Bank of Cleveland's Survey of Firms'Inflation Expectations,2018-24<|md_end|>
+<|box_start|>515 552 903 750<|box_end|><|ref_start|>table<|ref_end|><|md_start|><fcel>Year<fcel>Lower bound<fcel>Median<fcel>Upper bound<nl>
+<fcel>2018<fcel>2.0<fcel>2.0<fcel>2.5<nl>
+<fcel>2019<fcel>1.9<fcel>2.0<fcel>2.5<nl>
+<fcel>2020<fcel>1.5<fcel>1.6<fcel>2.0<nl>
+<fcel>2021<fcel>2.0<fcel>2.5<fcel>3.0<nl>
+<fcel>2022<fcel>2.0<fcel>3.0<fcel>4.0<nl>
+<fcel>2023<fcel>2.0<fcel>3.0<fcel>3.5<nl>
+<fcel>2024<fcel>2.0<fcel>2.0<fcel>2.8<nl>
+<|md_end|>
+<|box_start|>520 758 890 835<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Notes: Responses to the SoFIE question of what annual inflation rate the Fed is trying to achieve on average are collected in April of each year. This figure reports the responses (rates in percentage points) that fall within the two middle quartiles of the distribution: The lower and upper bounds are those of the interquartile range (that is, the middle \(50\%\) of the distribution). See note 1 for further details.<|md_end|>
+<|box_start|>520 842 870 868<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Source: Federal Reserve Bank of Cleveland, Survey of Firms' Inflation Expectations (SoFIE).<|md_end|>
+--------------------------------------------------
+<|box_start|>086 062 906 168<|box_end|><|ref_start|>text<|ref_end|><|md_start|>unanchored from the Federal Reserve's \(2\%\) inflation target. To what extent can these changes impact inflation and output? On the one hand, higher price setting tends to increase the equity value of the firms, which benefits shareholders. On the other hand, higher price setting tends to increase the nominal wage, which benefits workers. Hence, the rise in inflation and inflation expectations can have uneven consequences for different households, which, in turn, can affect the level of inequality in the economy. Does this differential impact matter for inflation and output?<|md_end|>
+<|box_start|>085 183 914 448<|box_end|><|ref_start|>text<|ref_end|><|md_start|>We use a staggered- price New Keynesian model with heterogeneous agents to answer these questions. In the model, some firms will not be able to set their prices optimally at each point in time (because of menu costs or information frictions). When firms cannot reset the price of their good optimally, they index their previously set price in part based on the past observed inflation rate and in part based on their view of where inflation is heading. Hence, we shock their perceptions about future inflation while leaving unchanged the Federal Reserve's inflation target of \(2\%\) in our model. This is a scenario where firms' expectations become unanchored, at least temporarily, but the Fed continues to follow its policy rule—which prescribes responding to inflation more than one for one whenever inflation is above or below the \(2\%\) target—and the firms know this. This article is organized as follows. In the next section, we present our staggered- price New Keynesian model with heterogeneous agents, describing its environment at a general level. Following that section, we discuss the calibration of the model and then go over the results of a simulation where an unexpected shock temporarily raises the inflation target \((\pi^{\bar{x}})\) in the firms' price indexation rule. Next, we discuss the main economic mechanism that propagates the effects of the price indexation shock in our model economy. To close, we summarize the results from our model with heterogeneous agents relative to those from a counterpart model with a representative agent.<|md_end|>
+<|box_start|>086 460 145 478<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Model<|md_end|>
+<|box_start|>086 493 915 617<|box_end|><|ref_start|>text<|ref_end|><|md_start|>We build on a broad class of medium- scale dynamic general equilibrium models, typically used in central banks. These models seek to describe the entire economy as the interactions between various sectors and markets (for example, households, firms, and government) in a state of equilibrium where supply equals demand subject to nominal price rigidities (or price stickiness). In particular, we consider a heterogeneous agents New Keynesian (HANK) model with uninsurable idiosyncratic risk to household productivity, borrowing constraints, and nominal rigidities à la Calvo (1983) with staggered price setting. In this section, we describe the environment at a general level (see the appendix for details about the equilibrium conditions).<|md_end|>
+<|box_start|>089 630 247 648<|box_end|><|ref_start|>title<|ref_end|><|md_start|># The environment<|md_end|>
+<|box_start|>085 662 912 874<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The economy is populated by a unit continuum of ex ante identical households with standard preferences over consumption and leisure. Households are endowed with stochastic idiosyncratic productivity that affects their labor income. Each household's productivity \((z_{t})\) is exogenous and follows \(\log z_{t} = \rho_{z}\log z_{t - 1} + \xi_{z,t},\) with \(\xi_{z,t}\sim N(0,\sigma_z^2)\), where \(\rho_{z}\) is the persistence of the process and where \(\xi_{z,t}\) is a random variable that follows a normal distribution (indicated by \(N\)) with variance \(\sigma_z^2\). Households decide how much to work, consume, and save. The household assets comprise government bonds, physical capital, and firms' equity. There is a borrowing constraint that prevents these households from taking asset positions lower than a certain negative level \((\phi_{a})\). While their optimal decisions are ex ante identical, the differences in household productivity induce different labor income and asset accumulations and, therefore, different consumption and saving decisions. These differences among households, in turn, generate wealth and income inequality. Hence, the model collapses to the representative agent New Keynesian (RANK) model if the uninsurable idiosyncratic shocks \((z)\) are removed.<|md_end|>
+<|box_start|>086 888 913 923<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The market structure of this model economy combines elements that are familiar from the standard New Keynesian literature (Smets and Wouters, 2007) with elements that are familiar from the standard incomplete<|md_end|>
+--------------------------------------------------
+<|box_start|>085 061 908 239<|box_end|><|ref_start|>text<|ref_end|><|md_start|>markets model literature (McKay, Nakamura, and Steinsson, 2016). While the final good is produced by a representative competitive firm, the intermediate goods are produced by monopolistically competitive firms. These firms are controlled by a risk- neutral manager who discounts future profits at rate \(\beta\), as in McKay, Nakamura, and Steinsson (2016). Profits are paid out to the households, with each household receiving a share of \(D_{t}\) proportional to its asset holdings. Unlike in McKay, Nakamura, and Steinsson (2016), households can trade firms' equity as well as the capital stock used in production. Finally, households trade a risk- free real bond with real interest rate \(R_{t}\) between periods \(t\) and \(t + 1\). There is a stock of government debt outstanding with the real face value \(B_{t}\). The government raises tax revenue to finance interest payments on this debt. These taxes are collected by levying a flat tax on households' income from labor and dividends.<|md_end|>
+<|box_start|>085 253 908 342<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The intermediate goods firms face frictions in adjusting their prices that imply that they can only update their prices with probability \(\theta\) per period, as in Calvo (1983). When they are not allowed to update, they adjust their price according to an indexation rule that combines the past value of inflation \((\pi_{t - 1})\) with the central bank's inflation target \((\pi^{*})\), as in Smets and Wouters (2007); in particular, after \(s\) periods without the chance of reoptimizing the price, a firm sets its price \((p_{s}^{*})\) according to the following rule:<|md_end|>
+<|box_start|>461 354 540 377<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+p_{s}^{*} = X_{s}p^{*},
+\]<|md_end|>
+<|box_start|>085 387 888 423<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where \(p^{*}\) is the price when the firm had the last chance to choose it optimally and \(X_{s}\) is the indexation rule, with<|md_end|>
+<|box_start|>362 439 638 463<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+X_{s} = \Pi_{l = 1}^{s}\big(1 + \pi_{l - 1}\big)^{l - p}\big(1 + \pi^{*}\big)^{1 - \iota_{p}}.
+\]<|md_end|>
+<|box_start|>084 471 908 650<|box_end|><|ref_start|>text<|ref_end|><|md_start|>For example, in the period immediately after the last optimal price choice, that is, \(s = 1\), the new price is adjusted as \(\left(1 + \pi\right)^{s}\left(1 + \pi^{*}\right)^{1 - p}\). The parameter \(\iota_{p}\) measures the degree at which prices are adjusted based on the past levels of inflation. When \(\iota_{p} = 0\), for example, the price will be adjusted using only the central bank's inflation target. (In the indexation rule, \(\Pi\) indicates the product operator with iterator \(l\).) Indexation captures the fact that firms set prices only partially to reflect their view on future inflation. We assume that in the short run, firms increase indexed prices faster, thereby reflecting their view that higher inflation is expected, which is what we observe in the Cleveland Fed survey results (figure 2). Simultaneously, we assume that the same firms stick to their belief that the Fed follows a Taylor rule with an inflation target of \(2\%\). Thus, indexing to a moving inflation target generates higher inflation. We interpret this scenario as a mild form of unanchoring.<|md_end|>
+<|box_start|>086 662 888 699<|box_end|><|ref_start|>text<|ref_end|><|md_start|>In the model, these firms produce intermediate goods, which are sold to the final good producer. The final good producer's cost minimization problem yields<|md_end|>
+<|box_start|>439 714 559 767<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+y = \left(\frac{p^{*}}{P}\right)^{\frac{\mu}{1 - \mu}}Y,
+\]<|md_end|>
+<|box_start|>084 778 903 896<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where the demand for the firm- specific good \((y)\) depends on its price \((p^{*})\), the overall price \((P)\), aggregate output \((Y)\), and the relative price demand elasticity \(\left(\epsilon = - \frac{\mu}{1 - \mu}\right)\). The lower the demand elasticity, the larger the desired markup \((\mu > 1)\) that the firm can charge to buyers. Hence, when intermediate goods producers can update their price, they set it by taking into account a production constraint and the demand constraint of the final good producer.<|md_end|>
+--------------------------------------------------
+<|box_start|>083 061 915 295<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Because firms know that they might not be able to optimize the price of their good in the future, their decision entails choosing a price optimal also for a number of future periods where they most likely will not be allowed to reoptimize; thus, their problem is inherently dynamic. The solution to the firms' problem is a markup rule where a firm charges a fixed markup \(\mu\) over a weighted- average of future discounted marginal costs \(\gamma_{s}\) (as captured by equation A17 in the appendix). The weight for each future marginal cost has two elements to it: the term \(\beta (1 - \theta)\), which puts less weight on future marginal costs because of discounting (\(\beta\) is the discount factor) and because the price being set now has lower probabilities of still being around in \(s\) periods of time as \(s\) gets bigger (\(\theta\) is price stickiness), and the term \(\left(\frac{P X_{s}}{P_{s}}\right)^{\frac{\mu}{1 - \mu}} Y_{s}\), which represents aggregate factors affecting firm demand in the future. In this article, we are interested in what happens when the firms' indexation rule, \(X_{s}\), unexpectedly increases (via an increase in the inflation target, \(\pi^{*}\), in the firms' price- setting function).<|md_end|>
+<|box_start|>085 307 902 343<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Finally, the central bank controls the nominal risk- free interest rate by following a simplified Taylor rule, whereby the interest rate \((i_{t})\) reacts more than one for one with inflation. In particular, the rule is given by<|md_end|>
+<|box_start|>402 354 596 375<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+i_{t} = R + \pi^{*} + \phi_{\pi}(\pi_{t} - \pi^{*}),
+\]<|md_end|>
+<|box_start|>085 382 900 419<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where \(R\) represents the long- run real interest rate and \(\phi_{\pi} > 1\) (that is, the response of the central bank to the inflation gap).<|md_end|>
+<|box_start|>086 431 192 449<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Calibration<|md_end|>
+<|box_start|>083 462 914 737<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Our model period is one quarter, and our calibration is summarized in figure 3. We calibrate the persistence and the standard deviation of the idiosyncratic productivity shocks so that \(\rho_{z} = 0.939\) and \(\sigma_{z} = 0.287\), respectively. We fix the steady- state real interest rate at \(2\%\) annually and adjust the discount factor to match this. We assume that household preferences are separable in consumption \((c)\) and labor \((n)\), that is, \(u(c_{t}) - \nu (n_{t}) = \frac{c_{t}^{1 - \sigma_{c}}}{1 - \sigma_{c}} - \frac{n_{t}^{1 + \sigma_{n}}}{1 + \sigma_{n}}\), where \(u\) is the utility of consumption, \(\nu\) is the disutility of labor, \(1 / \sigma_{c}\) is the elasticity of intertemporal substitution (or equivalently, the inverse of the coefficient of relative risk), and \(1 / \sigma_{n}\) is the Frisch elasticity of labor supply. We set the coefficient of relative risk aversion to 1 and the Frisch elasticity of labor supply to 1. Both values are within the range of values typically considered in the literature. For our choices of the desired markup of intermediate firms, \(\mu\), and probability of maintaining a fixed price, \(\theta\), we follow Christiano, Eichenbaum, and Rebelo (2011) and set \(\mu = 1.2\) and \(\theta = 0.15\). The degree of indexation to past inflation is 0.2, close to the estimated mode value obtained by Smets and Wouters (2007). Capital share and depreciation are set to standard values in the literature, that is, 0.4 and 0.02, respectively. We assume that households can borrow up to a limit \(\phi_{a}\), which we fix at \(- 1.5\). This parameter is calibrated so that the borrowing limit corresponds to one quarter of average labor income.<|md_end|>
+--------------------------------------------------
+<|box_start|>108 068 427 086<|box_end|><|ref_start|>table_caption<|ref_end|><|md_start|>3. Calibration of the model parameters<|md_end|>
+<|box_start|>099 088 903 524<|box_end|><|ref_start|>table<|ref_end|><|md_start|><fcel>Parameter<fcel>Description<fcel>Value<fcel>Target or source<nl>
+<fcel>Discount factor<fcel>β<fcel>0.99<fcel>2% annual real interest rate<nl>
+<fcel>Risk aversion<fcel>σc<fcel>1<fcel>Standard value<nl>
+<fcel>Frisch elasticity<fcel>1/σn<fcel>1<fcel>Standard value<nl>
+<fcel>Price markup<fcel>μ<fcel>1.2<fcel>Christiano, Eichenbaum, and Rebelo (2011)<nl>
+<fcel>Price stickiness<fcel>θ<fcel>0.15<fcel>Christiano, Eichenbaum, and Rebelo (2011)<nl>
+<fcel>Indexation on past inflation<fcel>νp<fcel>0.2<fcel>Smets and Wouters (2007)<nl>
+<fcel>Capital share<fcel>α<fcel>0.4<fcel>60% labor share of income<nl>
+<fcel>Capital depreciation<fcel>δ<fcel>0.02<fcel>Standard value<nl>
+<fcel>Inflation target<fcel>π*<fcel>0.005<fcel>2% annual inflation<nl>
+<fcel>Monetary policy response to inflation<fcel>φπ<fcel>1.5<fcel>Taylor (1993)<nl>
+<fcel>Persistence of the idiosyncratic productivity shock<fcel>ρz<fcel>0.939<fcel>Chang, Kim, and Schorfheide (2013)<nl>
+<fcel>Standard deviation of the idiosyncratic productivity shock<fcel>σz<fcel>0.286<fcel>Chang, Kim, and Schorfheide (2013)<nl>
+<|md_end|>
+<|box_start|>086 543 159 561<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Results<|md_end|>
+<|box_start|>085 574 913 769<|box_end|><|ref_start|>text<|ref_end|><|md_start|>We assume that at time zero, the economy is at its stationary equilibrium and an unexpected shock temporarily raises the inflation target \((\pi^{*})\) in the firms' price indexation rule. In particular, we calibrate the shock so that, on impact, the inflation target drifts positively by 50 basis points annually and then reverts back to zero with relatively high persistence (0.9). For the sake of comparison, we feed identical shocks to both the HANK model and its RANK counterpart. Typically, firms and the central bank have the same inflation target in their policy functions. However, we assume that firms perceive a temporary inflation target increase, while the central bank sticks to a \(2\%\) target. Hence, the unexpected one- time change in the price indexation rule only affects firms' pricing decisions and it does not change the central bank's inflation target in the monetary policy rule. We view this as a tractable way to capture information frictions that can arise in the short term. Explicitly modeling these frictions is outside the scope of this article. Figures 4, 5, and 6 report the dynamic transmission of these shocks to the economy.<|md_end|>
+<|box_start|>086 783 893 818<|box_end|><|ref_start|>text<|ref_end|><|md_start|>We first discuss the dynamic propagation of the price indexation shock to macroeconomic aggregates, which are reported in figure 4. <|md_end|>
+<|box_start|>087 831 650 850<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Mechanism and comparison of the HANK and RANK models<|md_end|>
+<|box_start|>086 864 912 917<|box_end|><|ref_start|>text<|ref_end|><|md_start|>In this subsection, we compare the impulse responses of some macroeconomic variables in the HANK and RANK models, given that the inflation target \((\pi^{*})\) in the firms' price indexation rule unexpectedly increases by 50 basis points, as described before. As a result of the price increase from the price indexation shock,<|md_end|>
+--------------------------------------------------
+<|box_start|>120 109 880 705<|box_end|><|ref_start|>image<|ref_end|><|md_start|>![]('img_url')<|md_end|>
+<|box_start|>127 069 892 101<|box_end|><|ref_start|>image_caption<|ref_end|><|md_start|>4. Impulse responses of select macroeconomic variables to the price indexation shock in the HANK model versus the RANK model  Notes: This figure shows the impulse responses of six macroeconomic variables to the same price indexation shock (described in the text) in the heterogeneous agents New Keynesian (HANK) model (solid line) and in the representative agent New Keynesian (RANK) model (dashed line). The impulse responses are the percentage point deviations of the variables from stationary equilibrium. Source: Authors' calculations.<|md_end|>
+<|box_start|>086 779 898 821<|box_end|><|ref_start|>text<|ref_end|><|md_start|>there is an increase in marginal costs, which include real wages. This happens for both the HANK and the RANK models, as illustrated in figure 4. <|md_end|>
+<|box_start|>086 835 911 923<|box_end|><|ref_start|>text<|ref_end|><|md_start|>While in both models there is a strong income effect pushing the labor supply down, the substitution effect dominates and agents are willing to work more to increase their savings because there are larger returns from investing in capital and in shares of the firms. This effect is stronger in the HANK model because dividends are unevenly distributed and agents have an incentive to acquire shares of the firms. To show this, we analyze labor and savings decisions at the individual level in the HANK model. In particular,<|md_end|>
+--------------------------------------------------
+<|box_start|>113 069 895 101<|box_end|><|ref_start|>title<|ref_end|><|md_start|># 5. Policy functions on impact after the price indexation shock and at the stationary equilibrium in the HANK model<|md_end|>
+<|box_start|>111 104 888 811<|box_end|><|ref_start|>image<|ref_end|><|md_start|>![]('img_url')<|md_end|>
+<|box_start|>135 816 895 855<|box_end|><|ref_start|>image_caption<|ref_end|><|md_start|>Notes: This figure shows slices of the policy functions (representing the optimal choices for labor and savings) for three different levels of agents' assets \(a\) (that is, their wealth) and across all productivity levels \(z\) in the heterogeneous agents New Keynesian (HANK) model. For all six panels, the variables (labor, savings, and productivity) are normalized to indexes.<|md_end|>
+<|box_start|>138 862 307 874<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Source: Authors' calculations.<|md_end|>
+--------------------------------------------------
+<|box_start|>098 114 507 381<|box_end|><|ref_start|>image<|ref_end|><|md_start|>![]('img_url')<|md_end|>
+<|box_start|>130 389 496 453<|box_end|><|ref_start|>image_caption<|ref_end|><|md_start|>Notes: This figure shows the impulse response of aggregate assets to the price indexation shock (described in the text) in the heterogeneous agents New Keynesian (HANK) model. The impulse response is the percentage point deviation of aggregate assets from stationary equilibrium.<|md_end|>
+<|box_start|>132 460 301 472<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Source: Authors' calculations.<|md_end|>
+<|box_start|>532 062 912 486<|box_end|><|ref_start|>text<|ref_end|><|md_start|>figure 5 shows the optimal choices for labor and savings for different productivity and wealth levels. The continuous blue line in each of the panels corresponds to the optimal choices on impact after the price indexation shock, whereas the dashed red line corresponds to the same decision rules in the absence of the shock (that is, in the stationary equilibrium). We find that highly productive agents, especially those with low to moderate levels of wealth (shown in the first two pairs of panels of figure 5), tend to work and save more relative to those with lower productivity. In aggregate, as shown in figure 6, the average amount of assets increases during the transition to the stationary equilibrium. This amplification mechanism is quantitatively significant as long as agents can invest in firms' shares. Endogenous equity ownership incentivizes agents to invest in physical capital as they can take advantage of future higher dividends, which are not redistributed uniformly across agents in the HANK model, but according to their stock ownership. This is also confirmed by the second- to- last panel in the bottom set of panels <|txt_contd|><|md_end|>
+<|box_start|>086 487 913 574<|box_end|><|ref_start|>text<|ref_end|><|md_start|>of figure A1 in the appendix, which reports the percentage change of the equity value \(q\) of the firms. The equity value \(q\) clearly increases persistently well above the stationary equilibrium in the HANK model, while it does not do this in the RANK model. Finally, in an alternative exercise (not shown), where we assume that the shares of the firms are evenly distributed, this mechanism is significantly dampened, rendering this response in the HANK model closer to that in the RANK model.8<|md_end|>
+<|box_start|>086 589 912 625<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Another amplification mechanism in the HANK model comes from the presence of uninsurable idiosyncratic risk, leading agents to engage in precautionary savings to shield against future negative productivity shocks.9<|md_end|>
+<|box_start|>086 638 913 726<|box_end|><|ref_start|>text<|ref_end|><|md_start|>For these reasons, as illustrated by figure 4, aggregate labor \((N)\) increases by more in the HANK model than in the RANK model. In the HANK model, agents exploit their initial boost in labor income to repay debt and/or invest in physical capital. The top right panel of figure 4 shows that in the HANK model, physical capital \((K)\) in aggregate increases persistently and remains well above the counterpart in the RANK model.10<|md_end|>
+<|box_start|>086 740 907 846<|box_end|><|ref_start|>text<|ref_end|><|md_start|>In order to clear the asset market, characterized by higher savings and investment levels, the interest rate \((R)\) goes up by more in the HANK model, as illustrated by the top left panel of figure 4. This increase in the interest rate is consistent with higher inflation levels via the Taylor rule. Furthermore, the high levels of savings and investment that push the interest rate up are chiefly due to the assumption of endogenous ownership of firms' shares. In its absence, the responses of both inflation and the interest rate are closer to their responses in the RANK model.<|md_end|>
+<|box_start|>086 860 894 914<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Finally, because of this strong saving and investment motive, the amplification mechanism in the HANK model transforms the supply nature of the shock observed in the RANK model into a demand- type transmission.<|md_end|>
+--------------------------------------------------
+<|box_start|>087 062 195 079<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Conclusion<|md_end|>
+<|box_start|>085 094 906 271<|box_end|><|ref_start|>text<|ref_end|><|md_start|>In this article, we study the propagation mechanisms of a shock that affects the firms' pricing decisions; in particular, we look at the dynamics transmission of an increase in the inflation target in the firms' price indexation rule. We studied the dynamics transmission of such a shock in a New Keynesian model with heterogeneous agents, incomplete markets, and nominal rigidities, and we compared it with the dynamics transmission from the same shock in a counterpart model with a representative agent. First, we find that this shock has sizable real effects in both cases. Second, we show that in the HANK model, agents exploit the initial higher wage by working more and saving more in order to engage in precautionary savings. This mechanism boosts physical capital accumulation and equity market values, thereby creating a substantial amplification of the shock's effects. Third, this mechanism transforms the supply nature of the shock observed in the RANK model into a demand- type transmission.<|md_end|>
+<|box_start|>085 284 903 391<|box_end|><|ref_start|>text<|ref_end|><|md_start|>To summarize, we study how a shock to the firms' price indexation rule influences aggregate outcomes through the inequality among agents in an economy, represented by a New Keynesian model with heterogeneous agents. We compare the aggregate dynamics in this model with those in a representative agent model. We find that such shocks have significant real effects in both models, but in the HANK model, agents respond by increasing labor and savings, leading to higher capital accumulation and equity values.<|md_end|>
+<|box_start|>086 407 130 421<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Notes<|md_end|>
+<|box_start|>082 434 907 828<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Notes1 We thank Edward S. Kostek II, senior vice president and director of research in the Research Department at the Federal Reserve Bank of Cleveland, for sharing information about the percentile of the distribution of SoFiE responses.2 When the distribution of data is right- skewed, this means the data are not distributed symmetrically around the mean and the long tail of the distribution is to the right of the mean.3 Menu costs are the costs that firms incur when they change the prices of their goods (or services). Information frictions come from economic agents infrequently updating their sets of information.4 Price rigidity is the resistance of a market price to change fast, even when shifting economic conditions suggest a different price would be optimal.5 In equilibrium, since there is no aggregate risk, firms' equity and bonds are perfect substitutes.6 The elasticity of demand \((\in)\) and seller's desired markup \((\mu)\) are determined by the Lerner condition, which implies that \(\mu = \frac{\epsilon}{\epsilon - 1}\).7 Chang, Kim, and Schoffriede (2013) estimated these persistence and volatility values using the entire sample of the Panel Study of Income Dynamics (PSID)—with all participants in the study being 18–65 years old. We discretize this process using the Rouwenhorst method, as in Kopecky and Suen (2010), with an 11- valued Markov chain.8 Although we do not show the results of this alternative exercise in this article, those results are available on request.9 There is no aggregate risk in both the HANK and RANK models.10 Note that the government bond supply is held constant to the stationary equilibrium value during the transition to the stationary equilibrium; hence, all savings are invested in physical capital and equity value.<|md_end|>
+--------------------------------------------------
+<|box_start|>086 062 442 081<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Appendix: The model in greater detail<|md_end|>
+<|box_start|>085 088 914 141<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Appendix: The model in greater detailIn this appendix we describe the model in greater detail. The model is a standard HANK model with price rigidities à la Calvo (1983), staggered price setting, and capital accumulation. The full dynamics of the model are reported in figure A1. <|md_end|>
+<|box_start|>100 154 883 187<|box_end|><|ref_start|>text<|ref_end|><|md_start|>A1. Impulse responses of macroeconomic variables to the price indexation shock in the HANK model versus the RANK model<|md_end|>
+<|box_start|>120 194 883 864<|box_end|><|ref_start|>image<|ref_end|><|md_start|>![]('img_url')<|md_end|>
+<|box_start|>143 868 898 922<|box_end|><|ref_start|>image_caption<|ref_end|><|md_start|>Notes: This figure shows the impulse responses of 12 macroeconomic variables to the same price indexation shock (described in the main text) in the heterogeneous agents New Keynesian (HANK) model (solid line) and in the representative agent New Keynesian (RANK) model (dashed line). The impulse responses are the percentage point deviations of the variables from stationary equilibrium. Source: Authors' calculations.<|md_end|>
+--------------------------------------------------
+<|box_start|>087 061 211 080<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Environment<|md_end|>
+<|box_start|>085 093 902 130<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Time is discrete and infinite, \(t = 0,1,2,\ldots\) The economy is made up of a continuum of households \(i\in [0,1]\) ; a final firm; a continuum of intermediate firms \(j\in [0,1]\) ; a monetary authority; and a government.<|md_end|>
+<|box_start|>087 142 194 161<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Households<|md_end|>
+<|box_start|>085 174 913 282<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Households Households receive utility from consumption and disutility from labor, which is divisible and indexed 0 to 1. Each period, a household makes labor supply, consumption, and saving decisions. At the beginning of each period, each household receives an idiosyncratic labor productivity shock \(z\), determined according to a discrete Markov process with transition probability matrix \(P_z(z'|z)\). Households borrow up to a borrowing constraint \(\phi_a\). To simplify notation, we avoid explicitly denoting each household with \(i\). Hence, the household consumption saving decisions are captured by the solution of the following program:<|md_end|>
+<|box_start|>137 293 721 325<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+V\left(b_{t},s_{t},k_{t},z_{t}\right) = \max_{b_{t + 1},s_{t + 1},k_{t + 1},n_{t},c_{t}}u\left(c_{t}\right) - \nu \left(n_{t}\right) + \beta \mathbb{E}\left[V\left(b_{t + 1},s_{t + 1},k_{t + 1},z_{t + 1}\right)\left|b_{t},z_{t}\right.\right]
+\]<|md_end|>
+<|box_start|>086 339 167 357<|box_end|><|ref_start|>text<|ref_end|><|md_start|>subject to<|md_end|>
+<|box_start|>137 369 785 416<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+c_{t} + b_{t + 1} + s_{t + 1} + k_{t + 1} = (1 - \tau)\cdot z_{t}W_{t}n_{t} + R_{t}^{b}\cdot b_{t} + T_{t} + \frac{q_{t} + (1 - \tau)\cdot D_{t}}{q_{t - 1}} s_{t} + (1 - \delta)k_{t} + r_{t}^{k}k_{t},
+\]<|md_end|>
+<|box_start|>090 429 302 449<|box_end|><|ref_start|>text<|ref_end|><|md_start|>A3) \(b_{t + 1} + s_{t + 1} + k_{t + 1} > \phi_a,\)<|md_end|>
+<|box_start|>086 455 889 527<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where \(c\) is consumption, \(n\) is labor supply, \(a\) is assets, \(r\) and \(w\) are real interest rates and wages, \(z\) is idiosyncratic productivity shocks, \(s_t = \tilde{S}_tq_{t - 1}\) , and \(\tau\) is a labor tax. Aggregate transfers (and therefore each household's transfer) \(T_{t}\) are set as a fraction of total output. Labor supply is such that households equate the marginal utilities of consumption and labor.<|md_end|>
+<|box_start|>086 540 520 558<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Hence, the intratemporal labor- consumption margin is<|md_end|>
+<|box_start|>137 570 359 590<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+u^{\prime}(c_{t})\cdot s_{t}W_{t}\cdot (1 - \tau) = \nu^{\prime}(n_{t}).
+\]<|md_end|>
+<|box_start|>086 603 560 622<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The first- order condition with respect to \(a_{t + 1},s_{t + 1}\) , and \(k_{t + 1}\) is<|md_end|>
+<|box_start|>137 633 363 685<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+1 - \mu_{t} = \mathbb{E}_{t}\left[\beta \frac{u^{\prime}(c_{t + 1})}{u^{\prime}(c_{t})}\cdot R_{t + 1}^{b}\right],
+\]<|md_end|>
+<|box_start|>137 699 466 751<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+1 - \mu_{t} = \mathbb{E}_{t}\left[\beta \frac{u^{\prime}(c_{t + 1})}{u^{\prime}(c_{t})}\cdot \frac{q_{t + 1} + (1 - \tau)\cdot D_{t + 1}}{q_{t}}\right],
+\]<|md_end|>
+<|box_start|>137 763 403 816<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+1 - \mu_{t} = \mathbb{E}_{t}\left[\beta \frac{u^{\prime}(c_{t + 1})}{u^{\prime}(c_{t})}\cdot \left(R_{t + 1}^{k} - \delta\right)\right],
+\]<|md_end|>
+<|box_start|>085 830 883 867<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where \(\mu_t\) is the Lagrange multiplier associated with the borrowing constraint. We solve an equivalent problem with \(a_{t} = b_{t} + s_{t} + k_{t}\); hence,<|md_end|>
+<|box_start|>137 879 596 911<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+V\left(a_{t},z_{t}\right) = \max_{a_{t + 1},n_{t},c_{t}}u\left(c_{t}\right) - \nu \left(n_{t}\right) + \beta \mathbb{E}\left[V\left(a_{t + 1}\right)\mid a_{t},z_{t}\right]
+\]<|md_end|>
+--------------------------------------------------
+<|box_start|>086 063 167 080<|box_end|><|ref_start|>text<|ref_end|><|md_start|>subject to<|md_end|>
+<|box_start|>133 094 441 112<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+c_{t} + a_{t + 1} = (1 - \tau)\cdot z_{t}W_{t}n_{t} + R_{t}\cdot a_{t} + T_{t},
+\]<|md_end|>
+<|box_start|>086 125 213 144<|box_end|><|ref_start|>text<|ref_end|><|md_start|>A10) \(a_{t + 1}\geq \phi_{a},\)<|md_end|>
+<|box_start|>086 157 126 174<|box_end|><|ref_start|>text<|ref_end|><|md_start|>with<|md_end|>
+<|box_start|>402 188 596 285<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\begin{array}{l}{R_{t + 1} = R_{t + 1}^{b},}\\ {R_{t + 1} = \frac{q_{t + 1} + (1 - \tau)\cdot D_{t + 1}}{q_{t}},}\\ {R_{t + 1} = R_{t + 1}^{k} - \delta .} \end{array}
+\]<|md_end|>
+<|box_start|>086 295 763 334<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Note that in the stationary equilibrium, the second equation becomes \(q^{*} = \frac{(1 - \tau)\cdot D^{*}}{R^{*} - 1}\).<|md_end|>
+<|box_start|>086 348 171 366<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Final firm<|md_end|>
+<|box_start|>085 380 855 417<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The output of the final good producer is \(Y\), which combines a continuum of intermediate goods \(y_{j}\) according to<|md_end|>
+<|box_start|>133 429 267 474<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+Y_{t} = \left(\int_{0}^{1}y_{j,t}^{\mu}dj\right)^{\frac{1}{\mu}},
+\]<|md_end|>
+<|box_start|>086 490 859 527<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where \(1 / \mu\) is the elasticity parameter across the continuum of intermediate goods. The static profit maximization problem of the final firm yields the demand for intermediate goods:<|md_end|>
+<|box_start|>133 545 284 594<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+y_{j,t} = \left(\frac{p_{j,t}}{P_t}\right)^{\frac{1}{1 - \mu}}Y_t,
+\]<|md_end|>
+<|box_start|>086 610 292 665<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where \(P_{t} = \left(\int_{0}^{1}p_{j,t}^{\frac{1}{1 - \mu}}dj\right)^{1 - \mu}\).<|md_end|>
+<|box_start|>086 679 563 699<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Intermediate goods producers problem with indexation<|md_end|>
+<|box_start|>086 711 589 731<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The intermediate goods producers solve the following problem:<|md_end|>
+<|box_start|>133 742 598 794<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\max_{p_t^*,\{n_{j,s},k_{j,s},y_{j,s}\}_{s = s = t}}\sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\left(\frac{p_t^*X_{t,s}}{P_s} y_{j,s} - W_{s}n_{j,s} - r_s^k k_{j,s}\right)
+\]<|md_end|>
+--------------------------------------------------
+<|box_start|>086 063 167 080<|box_end|><|ref_start|>text<|ref_end|><|md_start|>subject to<|md_end|>
+<|box_start|>285 096 714 237<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\begin{array}{rl} & y_{j,s} = \left(\frac{p_t^*X_{t,s}}{P_s}\right)^{\frac{\mu}{1 - \mu}}Y_s,\\ & y_{j,s} = Zk_{j,s}^\alpha n_{j,s}^{1 - \alpha},\\ & X_{t,t} = 1,\\ & X_{t,s} = \Pi_{l = 1}^{s - t}\left(1 + \pi_{t + l - 1}\right)^{t_p}\left(1 + \pi_{t + l}^*\right)^{1 - 1_p},s = t + 1,t + 2,\ldots . \end{array}
+\]<|md_end|>
+<|box_start|>086 243 463 261<|box_end|><|ref_start|>text<|ref_end|><|md_start|>First, minimize the cost statically. Hence, solve<|md_end|>
+<|box_start|>113 269 333 306<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\min_{\{n_{j,s},k_{j,s},y_{j,s}\}_{s = t}^{\infty}}W_{s}n_{j,s} + r_{s}^{k}k_{j,s}
+\]<|md_end|>
+<|box_start|>086 321 167 337<|box_end|><|ref_start|>text<|ref_end|><|md_start|>subject to<|md_end|>
+<|box_start|>113 352 261 375<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+Zk_{j,s}^{\alpha}n_{j,s}^{1 - \alpha} = y_{j,s}.
+\]<|md_end|>
+<|box_start|>087 384 419 402<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The two first- order conditions (FOCs) are<|md_end|>
+<|box_start|>399 415 598 468<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\begin{array}{rl} & {\gamma_{j,s}\alpha Zk_{j,s}^{\alpha -1}n_{j,s}^{1 - \alpha} = r_s^k,}\\ & {\gamma_{j,s}Zk_{j,s}^{\alpha}\left(1 - \alpha\right)n_{j,s}^{-\alpha} = W_s,} \end{array}
+\]<|md_end|>
+<|box_start|>084 482 749 501<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where \(\gamma\) is the Lagrange multiplier on the constraint. Hence, we rewrite the FOCs as<|md_end|>
+<|box_start|>406 513 592 566<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\begin{array}{rl} & {\gamma_{j,s}\alpha y_{j,s} = r_s^k k_{j,s},}\\ & {\gamma_{j,s}y_{j,s}\left(1 - \alpha\right) = W_sn_{j,s}.} \end{array}
+\]<|md_end|>
+<|box_start|>086 579 266 597<|box_end|><|ref_start|>text<|ref_end|><|md_start|>By summation, we get<|md_end|>
+<|box_start|>405 611 592 635<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\gamma_{j,s}y_{j,s} = r_s^k k_{j,s} + W_sn_{j,s}.
+\]<|md_end|>
+<|box_start|>085 649 844 685<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Notice that the capital- labor ratio is the same across firms because it depends on only aggregate quantities and parameters (we take the ration between the two FOCs):<|md_end|>
+<|box_start|>435 699 563 745<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\frac{k_{j,s}}{n_{j,s}} = \frac{\alpha}{1 - \alpha}\frac{W_s}{r_s^k}.
+\]<|md_end|>
+<|box_start|>086 753 458 771<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The production function can then be written as<|md_end|>
+<|box_start|>410 785 589 835<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+y_{j,s} = \left(\frac{\alpha}{1 - \alpha}\frac{W_s}{r_s^k}\right)^\alpha n_{j,s}.
+\]<|md_end|>
+<|box_start|>086 850 428 868<|box_end|><|ref_start|>text<|ref_end|><|md_start|>We substitute the first two equations to get<|md_end|>
+<|box_start|>137 873 471 924<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\max_{p_t^*,\{y_{j,s}\}_{s = t}^\infty}\sum_{s = t}^\infty \beta^{s - t}\left(1 - \theta\right)^{s - t}\left(\frac{p_t^*X_{t,s}}{P_s} -\gamma_{j,s}\right)y_{j,s}
+\]<|md_end|>
+--------------------------------------------------
+<|box_start|>086 063 167 080<|box_end|><|ref_start|>text<|ref_end|><|md_start|>subject to<|md_end|>
+<|box_start|>286 093 714 148<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\begin{array}{rl} & X_{t,t} = 1,\\ & X_{t,s} = \Pi_{l = 1}^{s - t}\left(1 + \pi_{t + l - 1}\right)^{t_p}\left(1 + \pi_{t + l}^*\right)^{1 - t_p},s = t + 1,t + 2,\ldots . \end{array}
+\]<|md_end|>
+<|box_start|>086 157 444 176<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The first- order condition with respect to \(p_t^*\) is<|md_end|>
+<|box_start|>196 187 801 256<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\frac{X_{t,s}}{P_s}\left[\left(\frac{p_t^*X_{t,s}}{P_s}\right)^{\frac{\mu}{1 - \mu}} + \left(\frac{p_t^*X_{t,s}}{P_s} -\gamma_s\right)\frac{\mu}{1 - \mu}\left(\frac{p_t^*X_{t,s}}{P_s}\right)^{\frac{\mu}{1 - \mu} -1}\right]Y_s = 0,
+\]<|md_end|>
+<|box_start|>086 258 501 286<|box_end|><|ref_start|>text<|ref_end|><|md_start|>which after dividing by \(\left(p_t^*\right)^{\frac{\mu}{1 - \mu}}\) further simplifies to<|md_end|>
+<|box_start|>232 298 765 359<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\frac{X_{t,s}}{P_s}\left(\frac{X_{t,s}}{P_s}\right)^{\frac{\mu}{1 - \mu}}\left[1 + \frac{\mu}{1 - \mu} -\gamma_s\frac{\mu}{1 - \mu}\left(\frac{p_t^*X_{t,s}}{P_s}\right)^{-1}\right]Y_s = 0,
+\]<|md_end|>
+<|box_start|>086 367 211 385<|box_end|><|ref_start|>text<|ref_end|><|md_start|>which becomes<|md_end|>
+<|box_start|>182 401 840 454<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\frac{X_{t,s}}{P_s}\gamma_s\frac{\mu}{1 - \mu}\left(\frac{X_{t,s}}{P_s}\right)^{-1}\left(\frac{X_{t,s}}{P_s}\right)^{\frac{\mu}{1 - \mu}}Y_s = \sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\left(\frac{X_{t,s}}{P_s}\right)^{\frac{\mu}{1 - \mu}}\frac{X_{t,s}}{P_s}\left[\frac{1}{1 - \mu}\right]Y_s.
+\]<|md_end|>
+<|box_start|>086 463 251 480<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Hence, we have that<|md_end|>
+<|box_start|>223 495 775 549<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\gamma_s\mu \left(\frac{X_{t,s}}{P_s}\right)^{\frac{\mu}{1 - \mu}}Y_s = p_t^*\sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\frac{X_{t,s}}{P_s}\left(\frac{X_{t,s}}{P_s}\right)^{\frac{\mu}{1 - \mu}}Y_s,
+\]<|md_end|>
+<|box_start|>085 559 211 577<|box_end|><|ref_start|>text<|ref_end|><|md_start|>or equivalently,<|md_end|>
+<|box_start|>340 585 660 692<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+p_t^* = \mu \frac{\sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\left(\frac{X_{t,s}}{P_s}\right)^{\frac{\mu}{1 - \mu}}Y_s\gamma_s}{\sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\left(\frac{X_{t,s}}{P_s}\right)^{\frac{1}{1 - \mu}}Y_s}.
+\]<|md_end|>
+<|box_start|>085 703 837 750<|box_end|><|ref_start|>text<|ref_end|><|md_start|>After dividing everything by \(P_t\) and multiplying by \(\left(\frac{P_t}{P_t}\right)^{\frac{\mu}{1 - \mu}} = 1\) the right- hand side, the latter expression becomes<|md_end|>
+<|box_start|>138 765 475 873<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\frac{p_t^*}{P_t} = \mu \frac{\sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\left(\frac{P_tX_{t,s}}{P_s}\right)^{\frac{\mu}{1 - \mu}}Y_s\gamma_s}{\sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\left(\frac{P_tX_{t,s}}{P_s}\right)^{\frac{1}{1 - \mu}}Y_s},
+\]<|md_end|>
+<|box_start|>084 880 775 900<|box_end|><|ref_start|>text<|ref_end|><|md_start|>which is the New Keynesian Phillips curve (NKPC) under Calvo with price indexation.<|md_end|>
+--------------------------------------------------
+<|box_start|>086 061 614 081<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Recursive New Keynesian Phillips curve with indexation<|md_end|>
+<|box_start|>086 094 144 111<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Define<|md_end|>
+<|box_start|>344 127 653 180<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+P_{t}^{A}\equiv \sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\left(\frac{P_{t}X_{t,s}}{P_{s}}\right)^{\frac{\mu}{1 - \mu}}Y_{s}\mu \gamma_{s},
+\]<|md_end|>
+<|box_start|>085 197 120 213<|box_end|><|ref_start|>text<|ref_end|><|md_start|>and<|md_end|>
+<|box_start|>358 228 641 283<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+P_{t}^{B}\equiv \sum_{s = t}^{\infty}\beta^{s - t}\left(1 - \theta\right)^{s - t}\left(\frac{P_{t}X_{t,s}}{P_{s}}\right)^{\frac{1}{1 - \mu}}Y_{s}.
+\]<|md_end|>
+<|box_start|>085 298 576 316<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Following McKay, Nakamura, and Steinsson (2016), we have<|md_end|>
+<|box_start|>458 329 541 375<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\frac{p_t^*}{P_t} = \frac{P_t^A}{P_t^B}.
+\]<|md_end|>
+<|box_start|>085 398 517 417<|box_end|><|ref_start|>text<|ref_end|><|md_start|>This equation can be expressed recursively as follows:<|md_end|>
+<|box_start|>349 432 649 544<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\begin{array}{l} P_t^A = Y_t\mu \gamma_t + \beta (1 - \theta)\left(\frac{P_tX_{t,t + 1}}{P_{t + 1}}\right)^{\frac{\mu}{1 - \mu}}P_{t + 1}^A,\\ \displaystyle P_t^B = Y_t + \beta (1 - \theta)\left(\frac{P_tX_{t,t + 1}}{P_{t + 1}}\right)^{\frac{1}{1 - \mu}}P_{t + 1}^B, \end{array}
+\]<|md_end|>
+<|box_start|>086 559 136 575<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where<|md_end|>
+<|box_start|>379 590 620 619<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+X_{t,t + 1} = \left(1 + \pi_t\right)^{\iota_p}\left(1 + \pi_{t + 1}^*\right)^{1 - \iota_p}.
+\]<|md_end|>
+<|box_start|>087 634 388 653<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Aggregate price with indexation<|md_end|>
+<|box_start|>087 666 380 684<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The aggregate price level is given by<|md_end|>
+<|box_start|>310 698 690 751<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+P_{t} = \left(\int p_{j,t}^{\frac{1}{1 - \mu}}dj\right)^{1 - \mu} = \left[\theta p_{j,t}^{\frac{1}{1 - \mu}} + (1 - \theta)\int p_{j,t}^{\frac{1}{1 - \mu}}dj\right]^{1 - \mu}.
+\]<|md_end|>
+<|box_start|>085 760 650 788<|box_end|><|ref_start|>text<|ref_end|><|md_start|>By substituting \(p_{j,t} = p_{j,t - 1}\left(1 + \pi_{t - 1}\right)^{\iota_p}\left(1 + \pi_t^*\right)^{1 - \iota_p} = p_{j,t - 1}X_{t - 1,t}\), we obtain<|md_end|>
+<|box_start|>358 797 639 836<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+P_{t}^{\frac{1}{1 - \mu}} = \theta p_{t}^{\frac{1}{1 - \mu}} + (1 - \theta)X_{t - 1,t}^{\frac{1}{1 - \mu}}\int p_{t - 1}^{\frac{1}{1 - \mu}}dj,
+\]<|md_end|>
+<|box_start|>086 850 356 868<|box_end|><|ref_start|>text<|ref_end|><|md_start|>which can be further simplified to<|md_end|>
+<|box_start|>373 883 626 918<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+P_{t}^{\frac{1}{1 - \mu}} = \theta p_{t}^{\frac{1}{1 - \mu}} + (1 - \theta)X_{t - 1,t}^{\frac{1}{1 - \mu}}P_{t - 1}^{\frac{1}{1 - \mu}}.
+\]<|md_end|>
+--------------------------------------------------
+<|box_start|>086 051 380 082<|box_end|><|ref_start|>text<|ref_end|><|md_start|>We divide everything by \(P_{t - 1}^{\frac{1}{1 - \mu}}\) to get<|md_end|>
+<|box_start|>346 094 649 164<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+1 + \pi_{t} = \left[\theta \left(\frac{p_{t}^{*}}{P_{t - 1}}\right)^{\frac{1}{1 - \mu}} + (1 - \theta)X_{t - 1,t}^{\frac{1}{1 - \mu}}\right]^{1 - \mu},
+\]<|md_end|>
+<|box_start|>085 179 212 197<|box_end|><|ref_start|>text<|ref_end|><|md_start|>or equivalently,<|md_end|>
+<|box_start|>322 211 676 280<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+1 + \pi_{t} = \left[0\left((1 + \pi_{t})\frac{p_{t}^{*}}{P_{t}}\right)^{\frac{1}{1 - \mu}} + (1 - \theta)X_{t - 1,t}^{\frac{1}{1 - \mu}}\right]^{1 - \mu}.
+\]<|md_end|>
+<|box_start|>087 295 393 314<|box_end|><|ref_start|>text<|ref_end|><|md_start|>This yields an expression for inflation:<|md_end|>
+<|box_start|>392 327 606 441<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+1 + \pi_{t} = \left(\frac{(1 - \theta)X_{t - 1,t}^{\frac{1}{1 - \mu}}}{1 - \theta\left(\frac{p_{t}^{*}}{P_{t}}\right)^{\frac{1}{1 - \mu}}}\right)^{1 - \mu}.
+\]<|md_end|>
+<|box_start|>086 455 520 474<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Dispersion of prices law of motion with indexation<|md_end|>
+<|box_start|>086 487 767 507<|box_end|><|ref_start|>text<|ref_end|><|md_start|>We now derive the aggregate dispersion of prices, after pushing it one period forward:<|md_end|>
+<|box_start|>268 520 731 786<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\begin{array}{rl}{S_{t + 1}} & {= \int \left(\frac{p_{j,t + 1}}{P_{t + 1}}\right)^{\frac{\mu}{1 - \mu}}d\boldsymbol {j}}\\ & {= \theta \left(\frac{p_{t + 1}^{*}}{P_{t + 1}}\right)^{\frac{\mu}{1 - \mu}} + (1 - \theta)\int \frac{X_{t,t + 1}}{P_{t + 1}}\frac{p_{j,t}}{P_{t}}\right)^{\frac{\mu}{1 - \mu}}d\boldsymbol {j}}\\ & {= \theta \left(\frac{p_{t + 1}^{*}}{P_{t + 1}}\right)^{\frac{\mu}{1 - \mu}} + (1 - \theta)X_{t,t + 1}^{\frac{\mu}{1 - \mu}}(1 + \pi_{t + 1})^{-\frac{\mu}{1 - \mu}}\int \left(\frac{p_{j,t}}{P_{t}}\right)^{\frac{\mu}{1 - \mu}}d\boldsymbol {j}}\\ & {= \theta \left(\frac{p_{t + 1}^{*}}{P_{t + 1}}\right)^{\frac{\mu}{1 - \mu}} + (1 - \theta)X_{t,t + 1}^{\frac{\mu}{1 - \mu_{t + 1}}}(\boldsymbol {1} + \pi_{t + 1})^{-\frac{\mu}{1 - \mu}}S_{t}.} \end{array}
+\]<|md_end|>
+<|box_start|>086 801 331 819<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Hence, \(S_{t}\) evolves according to<|md_end|>
+<|box_start|>315 835 684 887<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+S_{t + 1} = \theta \left(\frac{p_{t + 1}^{*}}{P_{t + 1}}\right)^{\frac{\mu}{1 - \mu}} + (1 - \theta)X_{t,t + 1}^{\frac{\mu}{1 - \mu}}(1 + \pi_{t + 1})^{-\frac{\mu}{1 - \mu}}S_{t}.
+\]<|md_end|>
+--------------------------------------------------
+<|box_start|>085 062 200 079<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Note also that<|md_end|>
+<|box_start|>399 097 597 149<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\int y_{j,t}d j = \int \left(\frac{p_{j,t}}{P_{t}}\right)^{\frac{\mu}{1 - \mu}}Y_{t}d j,
+\]<|md_end|>
+<|box_start|>085 164 375 190<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where \(\int y_{j,t}d j = Z\int k_{j,t}^{\alpha}n_{j,t}^{1 - \alpha}d j\) ; hence,<|md_end|>
+<|box_start|>356 208 641 291<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\begin{array}{c}{\int Zk_{j,t}^{\alpha}n_{j,t}^{1 - \alpha}d j = \int \left(\frac{p_{j,t}}{P_{t}}\right)^{\frac{\mu}{1 - \mu}}d j Y_{t} = S_{t}Y_{t},}\\ {y_{j,s} = \gamma_{j,s}^{-1}r_{s}^{k}k_{j,s} + \gamma_{j,s}^{-1}W_{s}n_{j,s}.} \end{array}
+\]<|md_end|>
+<|box_start|>085 303 427 322<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Finally, note that \(\gamma_{j} = \gamma_{s}\) which implies that<|md_end|>
+<|box_start|>273 334 725 362<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\int y_{j,s}d j = \gamma_{s}^{-1}r_{s}^{k}\int k_{j,s}d j + \gamma_{s}^{-1}W_{s}\int n_{j,s}d j = \gamma_{s}^{-1}r_{s}^{k}K_{s} + \gamma_{s}^{-1}W_{s}N_{s}.
+\]<|md_end|>
+<|box_start|>087 376 265 395<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Government budget<|md_end|>
+<|box_start|>085 405 692 431<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The government budget constraint is \(B_{t + 1} + \tau D_t + \tau \int ztW_tn_td\Lambda = R_tB_t + G_t + T_t,\)<|md_end|>
+<|box_start|>085 439 876 475<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where \(\Lambda\) is the cumulative distribution function (CDF) of agents, with associated probability density function (PDF) \(\lambda\)<|md_end|>
+<|box_start|>086 488 198 506<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Market clear<|md_end|>
+<|box_start|>086 520 387 539<|box_end|><|ref_start|>text<|ref_end|><|md_start|>In equilibrium the labor market clears<|md_end|>
+<|box_start|>441 551 556 579<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\int z_t n_t d\Lambda = N_t.
+\]<|md_end|>
+<|box_start|>087 593 273 611<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The bond market clears<|md_end|>
+<|box_start|>337 625 660 652<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\int a_t d\Lambda = B_t + \int s_t d\Lambda + K_t = B_t + q_{t - 1} + K_t,
+\]<|md_end|>
+<|box_start|>086 667 135 684<|box_end|><|ref_start|>text<|ref_end|><|md_start|>where<|md_end|>
+<|box_start|>321 693 676 722<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\int s_t d\Lambda = \int \tilde{s}_t q_{t - 1} d\Lambda = q_{t - 1} \int \tilde{s}_t d\Lambda = q_{t - 1} \tilde{S} = q_{t - 1}.
+\]<|md_end|>
+<|box_start|>087 730 366 748<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The aggregate dividend is given by<|md_end|>
+<|box_start|>359 762 638 784<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+D_{t} = Y_{t} - W_{t}N_{t} - r_{t}^{k}K_{t} = \left(1 - \gamma_{t}S_{t}\right)Y_{t},
+\]<|md_end|>
+<|box_start|>085 800 408 818<|box_end|><|ref_start|>text<|ref_end|><|md_start|>and the resource constraint is as follows:<|md_end|>
+<|box_start|>435 831 565 849<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+C_t + I_t + G_t = Y_t.
+\]<|md_end|>
+--------------------------------------------------
+<|box_start|>088 061 297 080<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Stationary equilibrium<|md_end|>
+<|box_start|>085 093 888 129<|box_end|><|ref_start|>text<|ref_end|><|md_start|>In the stationary equilibrium, all aggregate quantities are fixed and inflation is equal to the exogenous target \(\pi^{*}\). We have that<|md_end|>
+<|box_start|>437 141 622 194<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\begin{array}{l}{P^A = Y\mu \gamma +\beta (1 - \theta)P^A,}\\ {}\\ {P^B = Y + \beta (1 - \theta)P^B.} \end{array}
+\]<|md_end|>
+<|box_start|>087 206 222 224<|box_end|><|ref_start|>text<|ref_end|><|md_start|>This implies that<|md_end|>
+<|box_start|>439 237 557 278<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\frac{p^{*}}{P} = \frac{p^{A}}{p^{B}} = \mu \gamma ,
+\]<|md_end|>
+<|box_start|>084 292 736 312<|box_end|><|ref_start|>text<|ref_end|><|md_start|>which is the usual rule for markup over marginal cost. In the steady state, we have<|md_end|>
+<|box_start|>375 324 621 438<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+1 + \pi^{*} = \left(\frac{(1 - \theta)\left(1 + \pi^{*}\right)^{\frac{1}{1 - \mu}}}{1 - \theta\left(\frac{p^{*}}{P}\right)^{\frac{1}{1 - \mu}}}\right)^{1 - \mu},
+\]<|md_end|>
+<|box_start|>086 453 211 470<|box_end|><|ref_start|>text<|ref_end|><|md_start|>which becomes<|md_end|>
+<|box_start|>341 484 655 554<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+1 - \theta \left(\frac{p^{*}}{P}\right)^{\frac{1}{1 - \mu}} = \frac{(1 - \theta)\left(1 + \pi^{*}\right)^{\frac{1}{1 - \mu}}}{(1 + \pi^{*})^{\frac{1}{1 - \mu}}} = 1 - \theta ,
+\]<|md_end|>
+<|box_start|>086 569 276 587<|box_end|><|ref_start|>text<|ref_end|><|md_start|>yielding this expression<|md_end|>
+<|box_start|>468 602 531 641<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\frac{p^{*}}{P} = 1.
+\]<|md_end|>
+<|box_start|>087 656 276 673<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Therefore, we have that<|md_end|>
+<|box_start|>467 688 531 706<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\gamma = \mu^{-1}.
+\]<|md_end|>
+<|box_start|>087 720 280 737<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Also, in the steady state,<|md_end|>
+<|box_start|>434 753 566 805<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+S = \left(\frac{p^{*}}{P}\right)^{\frac{\mu}{1 - \mu}} = 1.
+\]<|md_end|>
+<|box_start|>085 820 619 838<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Given the guess for \(R\) and \(N\), we find capital, wage, and \(Y\) such that<|md_end|>
+<|box_start|>437 848 585 904<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+\begin{array}{l}\gamma \alpha SY = r^k K,\\ \gamma (1 - \alpha)SY = WN. \end{array}
+\]<|md_end|>
+--------------------------------------------------
+<|box_start|>087 063 400 081<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Combining these equations, we get that<|md_end|>
+<|box_start|>412 088 587 127<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+K = \frac{\alpha}{1 - \alpha}\frac{N}{R - 1 + \delta} W.
+\]<|md_end|>
+<|box_start|>084 139 707 159<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Combining this equation with \(SY = \gamma^{- 1}r^{k}K + \gamma^{- 1}WN\), we obtain the labor share:<|md_end|>
+<|box_start|>408 170 582 192<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+SY = \gamma^{-1}(1 - \alpha)^{-1}WN.
+\]<|md_end|>
+<|box_start|>085 204 517 222<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Finally, integrating the production function, we obtain<|md_end|>
+<|box_start|>394 231 605 274<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+SY = \left(\frac{\alpha}{1 - \alpha}\frac{W}{R - 1 + \delta}\right)^{\alpha}N,
+\]<|md_end|>
+<|box_start|>086 284 203 301<|box_end|><|ref_start|>text<|ref_end|><|md_start|>which leads to<|md_end|>
+<|box_start|>351 311 648 343<|box_end|><|ref_start|>equation<|ref_end|><|md_start|>\[
+W = \big(\gamma \big)^{\frac{1}{1 - \alpha}}\alpha^{\frac{\alpha}{1 - \alpha}}\big(1 - \alpha \big)\big(R - 1 + \delta \big)^{-\frac{\alpha}{1 - \alpha}}.
+\]<|md_end|>
+<|box_start|>087 350 245 369<|box_end|><|ref_start|>title<|ref_end|><|md_start|># Solution method<|md_end|>
+<|box_start|>085 382 914 525<|box_end|><|ref_start|>text<|ref_end|><|md_start|>The model is solved with global methods. For the stationary equilibrium, we guess the interest and aggregate labor and then solve for the household policy functions, calculate the corresponding transition matrix and population ergodic distribution, and then compute the implied aggregate quantities. We search for the implied aggregate quantities that match the guesses using the Levenberg- Marquardt algorithm. For the unexpected shocks, we fix a long enough time horizon and guess paths for interest rates and the firms' total costs. Given the guesses, we compute the corresponding policy functions period by period in the backward phase and adjust the guesses in the forward phase by clearing all markets. We repeat this until adjustments to both guessed paths are numerically small.<|md_end|>
+<|box_start|>086 551 180 568<|box_end|><|ref_start|>title<|ref_end|><|md_start|># References<|md_end|>
+<|box_start|>086 577 908 613<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Calvo, Guillermo A., 1983, "Staggered prices in a utility- maximizing framework," Journal of Monetary Economics, Vol. 12, No. 3, September, pp. 383- 398. Crossref<|md_end|>
+<|box_start|>085 625 912 679<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Chang, Yongsung, Sun- Bin Kim, and Frank Schorfheide, 2013, "Labor- market heterogeneity, aggregation, and policy (in)variance of DSGE model parameters," Journal of the European Economic Association, Vol. 11, Supplement 1, January, pp. 193- 220. Crossref<|md_end|>
+<|box_start|>086 692 902 729<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Christiano, Lawrence, Martin Eichenbaum, and Sergio Rebelo, 2011, "When is the government spending multiplier large?," Journal of Political Economy, Vol. 119, No. 1, February, pp. 78- 121. Crossref<|md_end|>
+<|box_start|>085 742 900 778<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Kopecky, Karen A., and Richard M. H. Suen, 2010, "Finite state Markov- chain approximations to highly persistent processes," Review of Economic Dynamics, Vol. 13, No. 3, July, pp. 701- 714. Crossref<|md_end|>
+<|box_start|>085 790 903 827<|box_end|><|ref_start|>text<|ref_end|><|md_start|>McKay, Alisdair, Emi Nakamura, and Jon Steinsson, 2016, "The power of forward guidance revisited," American Economic Review, Vol. 106, No. 10, October, pp. 3133- 3158. Crossref<|md_end|>
+<|box_start|>085 840 903 876<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Smets, Frank, and Rafael Wouters, 2007, "Shocks and frictions in US business cycles: A Bayesian DSGE approach," American Economic Review, Vol. 97, No. 3, June, pp. 586- 606. Crossref<|md_end|>
+<|box_start|>085 890 908 926<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Taylor, John B., 1993, "Discretion versus policy rules in practice," Carnegie- Rochester Conference Series on Public Policy, Vol. 39, December, pp. 195- 214. Crossref<|md_end|>
+--------------------------------------------------
+<|box_start|>128 098 485 167<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Economic Perspectives is published by the Economic Research Department of the Federal Reserve Bank of Chicago. The views expressed are the authors' and do not necessarily reflect the views of the Federal Reserve Bank of Chicago or the Federal Reserve System.<|md_end|>
+<|box_start|>128 178 488 218<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Marcelo Veracierto, Economics Editor; Helen Koshy and Han Y. Choi, Editors; Julia Baker, Senior Production Editor; Sheila A. Mangler, Editorial Assistant.<|md_end|>
+<|box_start|>129 230 378 244<|box_end|><|ref_start|>text<|ref_end|><|md_start|>\(\mathbb{C}\) 2024 Federal Reserve Bank of Chicago<|md_end|>
+<|box_start|>504 098 862 235<|box_end|><|ref_start|>text<|ref_end|><|md_start|>Economic Perspectives articles may be reproduced in whole or in part, provided the articles are not reproduced or distributed for commercial gain and provided the source is appropriately credited. Prior written permission must be obtained for any other reproduction, distribution, republication, or creation of derivative works of Economic Perspectives articles. To request permission, please contact Helen Koshy, managing editor, at 312- 505- 6723 or email Helen.Koshy@chi.frb.org. Economic Perspectives and other Bank publications are available at https://www.chicagofed.org.<|md_end|>
+<|box_start|>505 246 635 261<|box_end|><|ref_start|>text<|ref_end|><|md_start|>ISSN 0895- 0164<|md_end|>
