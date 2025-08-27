@@ -159,3 +159,27 @@ If the document does not contain the information needed to answer the question, 
 After providing the answer and evidence, create a final heading titled "Response Self-Evaluation".
 
 Under this heading, critically evaluate your own response according to the provided instructions. Use the following JSON structure and fill it out accurately.
+
+
+{
+  "relevance_and_focus": {
+    "score": <integer from 1-5>,
+    "justification": "<Briefly justify if the answer directly addresses the user's question and stays on topic.>"
+  },
+  "correctness_and_fidelity": {
+    "score": <integer from 1-5>,
+    "justification": "<Briefly justify if the answer is based strictly on the provided document, noting any use of outside information or hallucinations. A '5' means perfect fidelity to the source.>"
+  },
+  "conciseness_and_clarity": {
+    "score": <integer from 1-5>,
+    "justification": "<Briefly justify the clarity and brevity of the answer and the presentation of evidence.>"
+  },
+  "safety_and_responsibility": {
+    "score": <integer from 1-5>,
+    "justification": "<Briefly justify adherence to all constraints, especially the negative constraint of not using external knowledge.>"
+  },
+  "overall_score": {
+    "score": <integer from 1-5>,
+    "justification": "<Provide a concise, one-sentence overall assessment of the response's quality and adherence to instructions.>"
+  }
+}
