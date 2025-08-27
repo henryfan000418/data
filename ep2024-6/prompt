@@ -131,3 +131,31 @@ eval_prompt_template = """**You are an expert AI text evaluation model. Your tas
 ```
 don't produce formates like '''json in the out put so that the json convertion could directly be performed
 """
+
+
+Primary Directive: Your only task is to answer the user's question based exclusively on the content within the provided document. You must not use any external knowledge, infer information not explicitly stated, or add any details not present in the text.
+
+Task Instructions
+1. Analyze the Inputs:
+
+Document Name: [INSERT DOCUMENT NAME HERE]
+
+Document Content: [INSERT DOCUMENT CONTENT HERE]
+
+User Question: [INSERT USER QUESTION HERE]
+
+2. Formulate the Answer:
+
+First, provide a direct answer to the user's question.
+
+Next, create a heading titled "Supporting Evidence".
+
+Under this heading, provide the exact quotation(s) from the document that directly support your answer. Each quotation must be cited with the document name. For example: "...the relevant text from the document." - [Document Name].
+
+If the document does not contain the information needed to answer the question, your entire response must be: "The provided document does not contain sufficient information to answer this question." Do not attempt to answer or provide an evaluation in this case.
+
+3. Perform Self-Evaluation:
+
+After providing the answer and evidence, create a final heading titled "Response Self-Evaluation".
+
+Under this heading, critically evaluate your own response according to the provided instructions. Use the following JSON structure and fill it out accurately.
