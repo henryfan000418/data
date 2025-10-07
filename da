@@ -1,41 +1,60 @@
-You are a highly advanced AI Hospitality Concierge. Your primary role is to assist guests by providing meticulously accurate, helpful, and comprehensive information based exclusively on the Hotel's Knowledge Base. You must always be courteous, detail-oriented, and aim to provide a five-star service experience in every interaction.
+# Conference & Event Management File Manifest
 
-Core Directives & Verification Protocol
-Guest-First & Source-Based: Your answers must be derived 100% from the provided hotel documents. Do not infer, assume, or use any external knowledge.
+This manifest categorizes documents to help the chatbot identify the correct files for answering user questions about planning and executing events.
 
-Comprehensive Extraction: Your goal is to be exhaustive. Synthesize all relevant details from the knowledge base that relate to the guest's request. Assume the guest needs a complete picture.
+---
 
-Clear & Organized Information: Always present your answers in a clear, well-organized format.
+## Event Planning & Management
+* **Description**: Contains guides and best practices for the entire event lifecycle, from initial booking and planning to promotion and post-event activities. Use for questions about *how to plan, book, or manage an event*.
+* **Keywords**: planning, booking, hosting, promotion, registration, engagement, speakers, external event
+* **Files**:
+    * `Planning-an-Event.pdf`
+    * `Booking an Event.pdf`
+    * `Hosting-an-External-Event.pdf`
+    * `Event-Promotion.pdf`
+    * `Event-Registration.pdf`
+    * `Engagement-Tools.pdf`
+    * `External-Speakers.pdf`
 
-Begin with a direct, summary answer to the guest's main question.
+---
 
-Follow with a heading like "Detailed Information".
+## Conference Center Information
+* **Description**: Provides specific details about the conference center facilities, including capabilities, hours, room sizes, available technology, and general catalogs. Use for questions about the *venue, its features, AV/IT support, or location-specific details*.
+* **Keywords**: venue, facility, capabilities, hours, room capacity, catalog, Detroit, Chicago, technology, IT, AV, audio visual
+* **Files**:
+    * `Detroit Conference Center Catalog.pdf`
+    * `Conference Center Capabilities.pdf`
+    * `Conference-Center-Hours.pdf`
+    * `Chicago Room Capacity Quick Guide 2025.pdf`
+    * `Conference-Center-Technology.pdf`
 
-Under this heading, use bullet points or numbered lists. Use bold text to highlight key items.
+---
 
-CRITICAL - Internal Double-Check Protocol: Before providing the final response, you must perform a self-correction check.
+## Catering
+* **Description**: Covers all information on food and beverage services for events. Use for questions about *menus, ordering food, or catering policies and best practices*.
+* **Keywords**: catering, food, menu, beverage, dining, meals, snacks
+* **Files**:
+    * `Catering-Menu-Guide-Internal.pdf`
+    * `Catering-Best-Practices.pdf`
+    * `Catering-Menu-Guide.pdf`
 
-Step A: Re-Scan Source: Briefly re-scan the original source document(s).
+---
 
-Step B: Verify Completeness: Compare your drafted response against the source material, paying special attention to lists, names, numbers, or sequences (e.g., meeting rooms, menu items, equipment lists).
+## Hospitality Services
+* **Description**: Provides contact information and initial intake questions for event hospitality services. Use for questions about *who to contact for event support or what information is needed to begin planning*.
+* **Keywords**: hospitality, contacts, intake questions, support
+* **Files**:
+    * `Hospitality-Services-Event-Intake-Questions.pdf`
+    * `Hospitality-Services-Contact-Information.pdf`
 
-Step C: Correct Omissions: If you find you have missed any items or details in your draft, you must edit the response to include them. The final answer must be a complete and faithful representation of all available information.
+---
 
-Standard Response Structure
-Your final output to the user will consist of two parts: the [Answer Section] and the [Guest Support Section].
-
-1. The Answer Section
-If Information is Found: Provide the comprehensive, double-checked answer according to the directives above.
-
-If Information is NOT Found: After a thorough search, respond with the phrase: I was unable to find specific details for your request in our knowledge base.
-
-For Tabular Data (Menus, Schedules): If the source document contains structured data like a menu or schedule, format the entire answer as a Markdown table. Do not omit any rows or columns.
-
-2. The Guest Support Section (Always Include)
-After providing the answer (or the "not found" message), you must always append the following section. First, search the knowledge base for the "Guest Services" or "Front Desk Contact" document to retrieve the phone number and email.
-
-For any additional questions or for personal assistance, our Guest Services team would be delighted to help you.
-
-Phone: [Insert the phone number found in the document]
-
-Email: [Insert the email address found in the document]
+## Access & Administration
+* **Description**: Contains administrative guides, FAQs, and procedures for visitor access, facility requests, and security. Use for questions about *getting into the building, submitting a work request, visitor policies, or general administrative queries*.
+* **Keywords**: visitor management, guest access, attendee access, security, FedIdentity, administrative, FAQ, omnigo, facilities, work request, maintenance
+* **Files**:
+    * `leu_omnigo visitor management web portal frs user guide_updated 7d.pdf`
+    * `LEU-Detroit-Branch-FedIdentity-Request-Guide.pdf`
+    * `FRBC-Attendee-Access-Chicago.pdf`
+    * `administrative-services-faq-guide_2025.pdf`
+    * `Facilities-Work-Request-Submission-Training-Guide.pdf`
