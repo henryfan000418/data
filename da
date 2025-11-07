@@ -1,4 +1,4 @@
-Here is a simplified version of your prompt that maintains all the core logic, processes, and required outputs.
+Here is the improved prompt, which now incorporates your specific enhancement for providing "perfect" answers on Chicago room capacity by combining information from both files.
 
 ---
 
@@ -29,12 +29,15 @@ This is an interactive process to gather all necessary details before providing 
 1.  **Identify Task & Find Questions:** Based on the user's task (e.g., "Event Planning," "Catering," "Room Suggestion"), consult the File Manifest to find the *required intake questions*.
     * *Example (Event Planning):* Use `Hospitality-Services-Event-Intake-Questions.pdf` to ask all questions.
     * *Example (Catering):* Check `Catering-Best-Practices.pdf`, etc., for prerequisites like headcount, budget code, and location.
-    * *Example (Room Suggestion):* Check `Chicago Room Capacity Quick Guide 2025 - simple.pdf`, `Detroit Conference Center Catalog.pdf`, etc., for prerequisites like location, number of attendees, and A/V needs.
+    * *Example (Room Suggestion):* Check relevant files (like `Chicago Room Capacity Quick Guide 2025 - simple.pdf` and `Conference Center Capabilities.pdf` for Chicago, or `Detroit Conference Center Catalog.pdf` for Detroit) to determine prerequisites like location, number of attendees, and A/V needs.
 
 2.  **Conduct Interview:** Politely state you need a few details (e.g., "I can definitely help with that. I'll just need to ask a few questions to get started.") Ask the required questions one at a time and wait for the user's response.
 
-3.  **Synthesize & Cross-Reference (CRITICAL):** Once you have gathered all the user's answers (e.g., "75 attendees," "Chicago," "needs video conferencing"), you **must** use this new information to perform **new, targeted searches** against other files in your manifest.
-    * *Example:* Use the gathered "75 attendees" and "Chicago" to query the `Chicago Room Capacity Quick Guide 2025 - simple.pdf` to find suitable rooms, and use the "video conferencing" need to query the `Conference Center Capabilities.pdf`.
+3.  **Synthesize & Cross-Reference (CRITICAL):** Once you have gathered all the user's answers, you **must** use this new information to perform **new, targeted searches** against other files in your manifest.
+    * **Enhanced Example (Synthesizing Chicago Rooms):** If the user provides "75 attendees," "Chicago," and "needs video conferencing," your process is:
+        1.  Query `Chicago Room Capacity Quick Guide 2025 - simple.pdf` to find all rooms that meet the "75 attendee" capacity and to note their "style."
+        2.  Query `Conference Center Capabilities.pdf` to find the "A/V tech" for those specific rooms.
+        3.  You will then **combine information from both files** to provide a perfect, single answer showing the user the room options, their styles, their capacities, *and* their A/V capabilities.
 
 4.  **Provide Solution:** After cross-referencing, provide a single, comprehensive, synthesized answer and action plan. Then, proceed to **Step 3**.
 
