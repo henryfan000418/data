@@ -1,4 +1,4 @@
-🌱 Stage 1 — Foundations (1–2 months)
+Stage 1 — Foundations (1–2 months)
 
 Goal: Build strong fundamentals in math, programming, and data handling.
 
@@ -14,36 +14,41 @@ Calculus basics: derivatives, gradients
 
 Python basics: variables, loops, functions
 
-Libraries: NumPy, Pandas, Matplotlib
+NumPy, Pandas, Matplotlib
 
-Writing clean code
+Clean coding practices
 
-Git & GitHub for version control
+Git & GitHub version control
 
 3. Starter Projects
 
-Exploratory data analysis on simple Kaggle datasets
+Exploratory data analysis on Kaggle datasets
 
-Create visualizations (histograms, scatterplots, boxplots)
+Data cleaning and visualization
 
-Basic data cleaning (missing values, outliers)
+Simple descriptive statistics reports
 
-Checkpoint:
+Checkpoint
 
-✔ Comfortable with Python and data manipulation
-✔ Can analyze and visualize real datasets
+Comfortable with Python and data manipulation
 
-🚀 Stage 2 — Core Machine Learning (2–3 months)
+Able to analyze and visualize datasets
 
-Goal: Learn classic ML algorithms and build strong foundations.
+Stage 2 — Core Machine Learning (2–3 months)
+
+Goal: Learn classic ML algorithms and evaluation methods.
 
 4. Supervised Learning
 
-Linear regression, logistic regression
+Linear regression
 
-Decision Trees, Random Forests
+Logistic regression
 
-Gradient boosting: XGBoost, LightGBM
+Decision trees
+
+Random forests
+
+Gradient boosting (XGBoost, LightGBM)
 
 5. Model Evaluation
 
@@ -51,124 +56,129 @@ Train/validation/test split
 
 Cross-validation
 
-Accuracy, precision/recall, F1-score
+Precision, recall, F1-score
 
-ROC/AUC, confusion matrix
+Confusion matrix
+
+ROC/AUC
 
 6. Unsupervised Learning
 
-Clustering: KMeans, DBSCAN
+KMeans
 
-Dimensionality reduction: PCA
+PCA
+
+DBSCAN
 
 Anomaly detection basics
 
 Projects
 
-Predict house prices
+House price prediction
 
-Classify customer churn
+Customer churn classification
 
-Cluster customers into segments
+Customer segmentation
 
-Forecast sales or demand
+Sales/demand prediction
 
-Checkpoint:
+Checkpoint
 
-✔ Can build and evaluate ML models
-✔ Can explain results and model performance
+Able to build and evaluate ML models
 
-🤖 Stage 3 — Deep Learning & NLP (2–3 months)
+Can explain performance metrics
 
-Goal: Learn modern AI tools and neural networks.
+Stage 3 — Deep Learning and NLP (2–3 months)
 
-7. Deep Learning Basics
+Goal: Learn modern AI techniques.
 
-Frameworks: PyTorch or TensorFlow
+7. Deep Learning
 
-Neural network fundamentals
+PyTorch or TensorFlow
 
-CNNs for images
+Feedforward neural networks
 
-RNN/LSTM/GRU for sequences
+Convolutional neural networks (CNNs)
+
+Recurrent networks (LSTM/GRU)
 
 8. Natural Language Processing (NLP)
 
-Tokenization, embeddings
+Tokenization, TF-IDF
 
-Word2Vec, TF-IDF
+Word embeddings
 
 Transformer models (BERT, DistilBERT)
 
-Text classification, sentiment analysis
+Text classification and sentiment analysis
 
 Projects
 
-Text sentiment classifier
+Sentiment analysis
 
-Image classifier (cats vs dogs)
+Image classifier
 
-Product review analyzer
+Product review classifier
 
-Simple chatbot or FAQ assistant
+Simple chatbot
 
-Checkpoint:
+Checkpoint
 
-✔ Can train deep learning models
-✔ Understand basic transformer fine-tuning
+Able to train deep learning models
 
-🧠 Stage 4 — Data Engineering & MLOps (2–4 months)
+Understand transformer fine-tuning basics
 
-Goal: Learn to deploy, automate, and scale data projects.
+Stage 4 — Data Engineering and MLOps (2–4 months)
+
+Goal: Learn how to deploy and scale real data science systems.
 
 9. Data Engineering
 
-SQL (MySQL, Postgres)
+SQL (MySQL or PostgreSQL)
 
-Data pipelines (Airflow/Prefect)
+Data pipelines (Airflow or Prefect)
 
-Cloud platforms (AWS/GCP/Azure)
+Cloud basics (AWS, GCP, or Azure)
 
-Building APIs with FastAPI or Flask
+Building APIs (FastAPI or Flask)
 
 10. MLOps
 
-Model deployment
+Model deployment techniques
 
-Docker
+Docker and containers
 
 MLflow for experiment tracking
 
-Monitoring & data drift detection
+Monitoring and model drift
 
-Continuous integration (GitHub Actions)
+CI/CD basics (GitHub Actions)
 
 Projects
 
-Build an ETL pipeline
+ETL pipeline
 
-Deploy a model as an API
+Deployed ML model via API
 
-Create a live dashboard
+Automated daily workflow
 
-Automate a daily data workflow
+Interactive dashboard
 
-Checkpoint:
+Checkpoint
 
-✔ Can deploy ML models
-✔ Understand how real-world systems run
+Can deploy a model in a simple production environment
 
-🏆 Stage 5 — Specialization (choose 1–2)
+Stage 5 — Choose a Specialization
 
-Once the foundations are strong, choose a specialization:
+Once you have the core skills, choose one or two tracks:
 
 A. NLP Specialist
 
 RAG systems
 
-Vector search (FAISS, Pinecone)
+Vector databases
 
-Fine-tuning LLMs
+LLM fine-tuning
 
 Chatbot systems
 
@@ -178,41 +188,42 @@ Distributed training
 
 Model optimization
 
-Large-scale API deployment
+High-performance serving
 
-C. Data Scientist (Business Focus)
+C. Business/Data Science Focus
 
-Experiment design (A/B testing)
+A/B testing
 
 Causal inference
 
-Forecasting and time series
+Forecasting
 
 Business storytelling
 
-D. Analytics & BI
+D. Analytics/BI
 
-Tableau / Power BI
+Tableau or Power BI
 
-KPI dashboards
+Dashboard design
 
-Story-driven analysis
+KPI reporting
 
-📚 Recommended Learning Resources
+Recommended Resources
+
 Free
 
-Kaggle micro-courses (excellent for beginners)
+Kaggle micro-courses
 
-Fast.ai (deep learning)
-
-YouTube: StatQuest, 3Blue1Brown
+Fast.ai
 
 Google ML Crash Course
 
+YouTube: StatQuest, 3Blue1Brown
+
 Paid
 
-Coursera: Machine Learning by Andrew Ng
+Coursera: Andrew Ng Machine Learning
 
 Coursera: Deep Learning Specialization
 
-Udemy: Python for Data Science, Full ML Bootcamps
+Udemy: Python for Data Science / ML Bootcamps
